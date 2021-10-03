@@ -1,0 +1,31 @@
+{
+    "name": "simplecountdown-theme-baby",
+    "version": "0.0.1",
+    "description": "Baby theme for simple countdown",
+    "dependencies": {
+      "simplecountdown": ">=2.0.0"
+    },
+    "devDependencies": {
+      "uglifyjs": "latest"
+    },
+    "scripts": {
+      "clean": "rm dist/*",
+      "build": "cp simplecountdown.js dist/$npm_package_name-$npm_package_version.js && uglifyjs simplecountdown.js > dist/$npm_package_name-$npm_package_version.min.js",
+      "prepublish": "npm run clean && npm run build && git switch -c $npm_package_version && git add . && git commit -a -m 'Release '$npm_package_version && git push origin $npm_package_version",
+      "postpublish": "git tag $npm_package_version && git push origin --tags"
+    },
+    "main": "simplecountdown-theme-baby.js",
+    "directories": {
+      "example": "examples",
+      "dist": "release"
+    },
+    "author": {
+      "name": "Benoît HAGENBOURGER",
+      "url": "http://benoit.hagenbourger.fr"
+    },
+    "license": "ISC",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/bhagenbourger/simplecountdown-theme-baby.git"
+    }
+  }
