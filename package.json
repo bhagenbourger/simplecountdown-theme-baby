@@ -3,7 +3,7 @@
     "version": "0.0.1",
     "description": "Baby theme for simple countdown",
     "dependencies": {
-      "simplecountdown": ">=2.0.0"
+      "simplecountdown": ">=3.0.2"
     },
     "devDependencies": {
       "uglifyjs": "latest"
