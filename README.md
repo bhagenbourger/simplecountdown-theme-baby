@@ -52,3 +52,6 @@ SimpleCountdown.addTheme(
 - merge the PR
 - checkout master
 - run `npm publish`
+
+## Credits
+The baby come from this codepen: https://codepen.io/ivhed/pen/PmPwQJ
