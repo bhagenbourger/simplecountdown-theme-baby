@@ -54,4 +54,4 @@ SimpleCountdown.addTheme(
 - run `npm publish`
 
 ## Credits
-The baby come from this codepen: https://codepen.io/ivhed/pen/PmPwQJ
+The baby is inspired by this codepen: https://codepen.io/ivhed/pen/PmPwQJ
